@@ -168,7 +168,7 @@ export const monthlyProgress = [
     category: "Learning & Upskilling",
     description:
       "Mastered Agentic AI architectures, Generative AI fundamentals, Retrieval-Augmented Generation (RAG), LangChain, and LangGraph.",
-    tags: ["LLMs", "RAG", "LangChain", "LangGraph", "Agentic AI"],
+    tags: ["LLMs", "RAG", "LangChain", "LangGraph", "Agentic AI", "GenAI", "LLMOps", "Prompt Engineering", "Vector Databases", "Crew AI"],
     color: "from-teal to-indigo",
   },
   {
