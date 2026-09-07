@@ -8,7 +8,7 @@ export const hero = {
 
 export const profileBio = {
   name: "Abhijit Das",
-  role: "AI & Data Trainee Specialist",
+  role: "AI & Data Specialist",
   tagline: "Architecting Intelligent Systems & Data Infrastructure for High-Growth Enterprises",
   bio: "Passionate AI & Data Specialist with a proven track record of converting complex raw datasets into high-ROI enterprise AI solutions. Skilled in autonomous agentic workflows, RAG architectures, SQL database migrations, and predictive intelligence. Recognized for expanding client account scope from a 2-month reporting engagement into a multi-year digital transformation account.",
   keyHighlights: [

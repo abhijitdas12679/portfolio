@@ -33,7 +33,7 @@ export default function Home() {
           >
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-teal/30 bg-teal/10 px-4 py-1.5 text-xs font-semibold text-teal sm:text-sm">
               <span className="h-2 w-2 rounded-full bg-teal animate-pulse" />
-              AI &amp; Data Trainee Specialist
+              AI &amp; Data Specialist
             </div>
 
             <h1 className="font-display text-3xl font-normal leading-[1.15] text-white sm:text-5xl md:text-[3.3rem]">
@@ -107,7 +107,7 @@ export default function Home() {
                 <span className="font-display text-sm italic text-white">
                   Abhijit Das
                 </span>
-                <span className="text-xs text-slate-400">Trainee Specialist</span>
+                <span className="text-xs text-slate-400">AI &amp; Data Specialist</span>
               </div>
             </div>
           </motion.div>
