@@ -125,9 +125,11 @@ export default function Home() {
               <h2 className="mt-4 font-display text-2xl font-normal text-white sm:text-3xl">
                 Bridging Data Engineering &amp; Autonomous AI
               </h2>
-              <p className="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">
-                {profileBio.bio}
-              </p>
+              <div className="mt-4 space-y-4 text-sm leading-relaxed text-slate-300 sm:text-base">
+                {profileBio.bio.map((paragraph, idx) => (
+                  <p key={idx}>{paragraph}</p>
+                ))}
+              </div>
             </div>
 
             <div className="w-full md:w-80 rounded-2xl border border-white/10 bg-white/[0.03] p-5">

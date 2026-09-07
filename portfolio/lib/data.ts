@@ -10,7 +10,11 @@ export const profileBio = {
   name: "Abhijit Das",
   role: "AI & Data Specialist",
   tagline: "Architecting Intelligent Systems & Data Infrastructure for High-Growth Enterprises",
-  bio: "Passionate AI & Data Specialist with a proven track record of converting complex raw datasets into high-ROI enterprise AI solutions. Skilled in autonomous agentic workflows, RAG architectures, SQL database migrations, and predictive intelligence. Recognized for expanding client account scope from a 2-month reporting engagement into a multi-year digital transformation account.",
+  bio: [
+    "I transform enterprise data bottlenecks into intelligent, revenue-generating autonomous systems. While others build simple chatbots, I architect end-to-end AI and data solutions that drive measurable business growth.",
+    "By bridging the gap between legacy data infrastructure and modern Agentic AI, I help high-growth enterprises optimize operations, automate complex workflows, and uncover predictive insights. My approach is rooted in delivering rapid ROI—evidenced by my track record of scaling a short-term analytics contract into a multi-year digital transformation partnership.",
+    "Whether you need to migrate complex SQL databases, design scalable RAG architectures, or deploy autonomous AI agents that act as your virtual workforce, I deliver production-ready solutions that put you ahead of the competition."
+  ],
   keyHighlights: [
     "Analyzed 50K+ public distribution system records to eliminate supply chain inefficiencies.",
     "Expanded a 2-month reporting contract into a 1-year AI trading portal build with recurring maintenance.",
