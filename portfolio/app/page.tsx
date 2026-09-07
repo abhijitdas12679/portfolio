@@ -137,7 +137,7 @@ export default function Home() {
                 Core Competencies
               </h3>
               <div className="mt-3 flex flex-wrap gap-2">
-                {["Agentic AI", "LangChain", "LangGraph", "RAG Systems", "SQL Migration", "Power BI", "EDA & Analytics", "Python & FastAPI"].map((skill) => (
+                {["Agentic AI", "LangChain", "LangGraph", "RAG Systems", "SQL Migration", "Power BI", "EDA & Analytics", "Python & FastAPI", "Docker", "Docker Compose", "Jenkins", "Kubernates", "Terraform", "Grafana", "SonarQube", "Amazon Web Services", "Google Cloud Platform", "Microsoft Azure", "Databricks", "PySpark", "Apache Spark", "Jupyter", "SQL Server", "PostgreSQL", "Microsoft SQL Server", "ETL", "Apache Airflow", "Hadoop", "Microsoft Fabric", "Data Lake"].map((skill) => (
                   <span
                     key={skill}
                     className="rounded-lg bg-teal/10 border border-teal/20 px-2.5 py-1 text-xs font-medium text-teal"
