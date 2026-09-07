@@ -177,7 +177,7 @@ export const monthlyProgress = [
     category: "Data Analytics & Insights",
     description:
       "Executed comprehensive Exploratory Data Analysis (EDA) across 50K+ records for Haryana State's Public Distribution System (FPS).",
-    tags: ["EDA", "Data Optimization", "Python", "Public Sector"],
+    tags: ["EDA", "Data Optimization", "Python", "Data Clieaning", "PowerBI"],
     color: "from-indigo to-violet",
   },
   {
@@ -195,7 +195,7 @@ export const monthlyProgress = [
     category: "Applied AI Builds",
     description:
       "Built full-stack production demos: Operations & Communication AI Agent and Travel Content Automation Platform.",
-    tags: ["AI Agents", "Automation", "Full-Stack", "Vercel"],
+    tags: ["AI Agents", "Automation", "Full-Stack", "Vercel", "Render", "HuggingFace"],
     color: "from-teal to-indigo",
   },
   {
@@ -222,7 +222,7 @@ export const monthlyProgress = [
     category: "Active Development",
     description:
       "Currently architecting and building an AI-powered trading and management portal for marine equipment brokerage.",
-    tags: ["Active Build", "AI Portal", "SQL Server", "Next.js"],
+    tags: ["Active Build", "AI Portal", "SQL Server", "React.js", "Fast API", "Azure AI"],
     color: "from-teal to-violet",
   },
 ];
