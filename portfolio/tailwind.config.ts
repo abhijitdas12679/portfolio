@@ -5,9 +5,17 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        card: "var(--card)",
+        muted: "var(--muted)",
+        "muted-foreground": "var(--muted-foreground)",
+        border: "var(--border)",
+        ring: "var(--ring)",
         dark: "#090D16",
         darksoft: "#0E1424",
         darkcard: "#131B2E",
@@ -46,10 +54,20 @@ const config: Config = {
           "0%, 100%": { transform: "translate(0px, 0px) scale(1)" },
           "50%": { transform: "translate(-25px, 30px) scale(1.05)" },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'marquee-reverse': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
       },
       animation: {
         float: "float 14s ease-in-out infinite",
         floatSlow: "floatSlow 18s ease-in-out infinite",
+        marquee: "marquee 40s linear infinite",
+        'marquee-reverse': "marquee-reverse 40s linear infinite",
       },
     },
   },

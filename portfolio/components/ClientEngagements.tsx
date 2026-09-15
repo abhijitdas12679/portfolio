@@ -33,7 +33,7 @@ export default function ClientEngagements() {
                 className="glass-card glass-card-hover relative z-10 overflow-hidden rounded-3xl p-6 sm:p-8 md:p-10"
               >
                 <v.Icon
-                  className="pointer-events-none absolute -right-6 -top-6 h-40 w-40 text-white/[0.03]"
+                  className="pointer-events-none absolute -right-6 -top-6 h-40 w-40 opacity-[0.03] text-foreground"
                   strokeWidth={1}
                 />
                 <div className="relative grid grid-cols-1 gap-6 md:grid-cols-[1fr_auto] md:gap-14">
@@ -44,14 +44,14 @@ export default function ClientEngagements() {
                       >
                         <v.Icon size={20} strokeWidth={1.75} />
                       </span>
-                      <span className="rounded-full border border-white/15 bg-white/5 px-3.5 py-1 text-xs font-medium text-slate-300">
+                      <span className="rounded-full border border-border bg-card px-3.5 py-1 text-xs font-medium text-muted-foreground">
                         {c.duration}
                       </span>
                     </div>
-                    <h3 className="mt-5 font-display text-xl text-white sm:text-2xl">
+                    <h3 className="mt-5 font-display text-xl text-foreground sm:text-2xl">
                       {c.title}
                     </h3>
-                    <p className="mt-4 text-sm leading-relaxed text-slate-300 sm:text-base">{c.description}</p>
+                    <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">{c.description}</p>
                   </div>
                   <div className="flex items-start pt-2 md:items-center md:justify-end md:pt-0">
                     <div className="text-left md:text-right">
@@ -60,7 +60,7 @@ export default function ClientEngagements() {
                       >
                         {c.metric}
                       </div>
-                      <div className="mt-1 flex items-center gap-1 text-xs text-slate-400 md:justify-end">
+                      <div className="mt-1 flex items-center gap-1 text-xs text-muted-foreground md:justify-end">
                         <TrendingUp size={12} />
                         {c.metricLabel}
                       </div>

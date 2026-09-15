@@ -42,11 +42,11 @@ export default function PocList() {
                 >
                   <v.Icon size={22} strokeWidth={1.75} />
                 </span>
-                <h3 className="mt-5 font-display text-lg font-medium text-white">{poc.title}</h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-300">
+                <h3 className="mt-5 font-display text-lg font-medium text-foreground">{poc.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                   {poc.description}
                 </p>
-                <div className="mt-6 flex items-center gap-2 border-t border-white/10 pt-4 text-xs font-medium text-slate-300 transition-colors group-hover:text-rose">
+                <div className="mt-6 flex items-center gap-2 border-t border-border pt-4 text-xs font-medium text-muted-foreground transition-colors group-hover:text-rose">
                   <FileText size={15} strokeWidth={1.75} />
                   Read the brief
                 </div>
