@@ -33,9 +33,9 @@ export default function ChapterHeading({
       >
         {number}
       </span>
-      <div className="border-b border-white/10 pb-4 flex-1">
-        <h2 className="font-display text-2xl text-white sm:text-3xl">{title}</h2>
-        {note && <p className="mt-1 text-sm text-slate-400">{note}</p>}
+      <div className="border-b border-border pb-4 flex-1">
+        <h2 className="font-display text-2xl text-foreground sm:text-3xl">{title}</h2>
+        {note && <p className="mt-1 text-sm text-muted-foreground">{note}</p>}
       </div>
     </motion.div>
   );

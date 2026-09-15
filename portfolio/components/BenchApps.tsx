@@ -14,7 +14,7 @@ const visuals = [
 
 export default function BenchApps() {
   return (
-    <section id="builds" className="relative border-t border-white/10 bg-gradient-to-b from-[#090D16] via-[#0E1424] to-[#090D16]">
+    <section id="builds" className="relative border-t border-border bg-background">
       <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-12 md:px-10 md:py-16">
         <ChapterHeading
           number="03"
@@ -40,11 +40,11 @@ export default function BenchApps() {
                   >
                     <v.Icon size={22} strokeWidth={1.75} />
                   </span>
-                  <h3 className="mt-5 font-display text-lg font-medium text-white">{app.title}</h3>
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-300">
+                  <h3 className="mt-5 font-display text-lg font-medium text-foreground">{app.title}</h3>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {app.description}
                   </p>
-                  <div className="mt-6 flex flex-col gap-2.5 border-t border-white/10 pt-4 text-sm">
+                  <div className="mt-6 flex flex-col gap-2.5 border-t border-border pt-4 text-sm">
                     <a
                       href={app.webLink}
                       target="_blank"
@@ -59,7 +59,7 @@ export default function BenchApps() {
                         href={app.docLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-xs text-slate-400 transition-colors hover:text-slate-200 hover:underline"
+                        className="inline-flex items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-foreground hover:underline"
                       >
                         <FileText size={14} strokeWidth={1.75} />
                         Read the write-up

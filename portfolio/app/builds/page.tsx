@@ -20,7 +20,7 @@ export default function BuildsPage() {
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-4xl font-display mb-12 text-center text-white"
+        className="text-4xl font-display mb-12 text-center text-foreground"
       >
         Applied AI Builds
       </motion.h1>
@@ -31,10 +31,10 @@ export default function BuildsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
             key={idx} 
-            className="p-8 rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent shadow-xl flex flex-col transition-all hover:border-white/20"
+            className="p-8 rounded-3xl border border-border bg-card shadow-xl flex flex-col transition-all hover:border-teal/50"
           >
-            <h2 className="text-2xl font-display text-white mb-4">{app.title}</h2>
-            <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-1">{app.description}</p>
+            <h2 className="text-2xl font-display text-foreground mb-4">{app.title}</h2>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-1">{app.description}</p>
             <div className="flex flex-wrap gap-4 mt-auto">
               {app.webLink && (
                 <Link href={app.webLink} target="_blank" className="inline-flex items-center gap-2 bg-teal/10 text-teal border border-teal/20 px-4 py-2 rounded-full text-sm font-medium hover:bg-teal/20 transition-colors">
@@ -42,7 +42,7 @@ export default function BuildsPage() {
                 </Link>
               )}
               {app.docLink && (
-                <Link href={app.docLink} target="_blank" className="inline-flex items-center gap-2 bg-white/5 text-slate-300 border border-white/10 px-4 py-2 rounded-full text-sm font-medium hover:bg-white/10 transition-colors">
+                <Link href={app.docLink} target="_blank" className="inline-flex items-center gap-2 bg-card text-muted-foreground border border-border px-4 py-2 rounded-full text-sm font-medium hover:bg-card-hover hover:text-foreground transition-colors">
                   <FileText size={16} /> Read Docs
                 </Link>
               )}

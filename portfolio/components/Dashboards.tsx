@@ -14,7 +14,7 @@ const visuals = [
 
 export default function Dashboards() {
   return (
-    <section id="dashboards" className="relative overflow-hidden bg-[#090D16] py-10 sm:py-12 md:py-16">
+    <section id="dashboards" className="relative overflow-hidden bg-background py-10 sm:py-12 md:py-16">
       <GradientOrbs variant="dark" />
       <div className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10">
         <ChapterHeading
@@ -40,12 +40,12 @@ export default function Dashboards() {
                 className="glass-card glass-card-hover group flex flex-row items-center justify-between gap-4 rounded-3xl p-6 sm:p-7"
               >
                 <div className="flex-1">
-                  <span className="font-display text-lg font-medium text-white">{d.title}</span>
+                  <span className="font-display text-lg font-medium text-foreground">{d.title}</span>
                   <div className="mt-4">
                     <MiniBarChart colorFrom={v.from} colorTo={v.to} />
                   </div>
                 </div>
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white transition-all group-hover:scale-110 group-hover:bg-indigo group-hover:border-transparent">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border bg-card text-foreground transition-all group-hover:scale-110 group-hover:bg-indigo group-hover:text-white group-hover:border-transparent">
                   <ArrowUpRight size={18} />
                 </span>
               </motion.a>

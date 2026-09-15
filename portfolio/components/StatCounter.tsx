@@ -40,12 +40,12 @@ export default function StatCounter({
       transition={{ duration: 0.5 }}
       className={`flex flex-col justify-start text-left ${className}`}
     >
-      <div className="flex items-baseline font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl min-h-[2.5rem]">
+      <div className="flex items-baseline font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl min-h-[2.5rem]">
         {prefix}
         {decimals > 0 ? display.toFixed(decimals) : Math.round(display).toLocaleString()}
         {suffix}
       </div>
-      <div className="mt-1.5 text-xs font-medium leading-snug text-slate-400">{label}</div>
+      <div className="mt-1.5 text-xs font-medium leading-snug text-muted-foreground">{label}</div>
     </motion.div>
   );
 }

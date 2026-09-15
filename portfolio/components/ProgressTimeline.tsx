@@ -16,7 +16,7 @@ export default function ProgressTimeline() {
         color="teal"
       />
 
-      <div className="relative border-l-2 border-white/10 pl-6 sm:pl-8 md:ml-4 md:pl-10">
+      <div className="relative border-l-2 border-border pl-6 sm:pl-8 md:ml-4 md:pl-10">
         <div className="flex flex-col gap-8">
           {monthlyProgress.map((item, index) => (
             <motion.div
@@ -28,7 +28,7 @@ export default function ProgressTimeline() {
               className="relative"
             >
               {/* Timeline Indicator Dot */}
-              <div className="absolute -left-[31px] top-1.5 flex h-6 w-6 items-center justify-center rounded-full border border-white/20 bg-[#090D16] sm:-left-[39px] md:-left-[47px]">
+              <div className="absolute -left-[31px] top-1.5 flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background sm:-left-[39px] md:-left-[47px]">
                 <div className={`h-2.5 w-2.5 rounded-full bg-gradient-to-r ${item.color}`} />
               </div>
 
@@ -40,7 +40,7 @@ export default function ProgressTimeline() {
                         <Calendar size={13} />
                         {item.month}
                       </span>
-                      <span className="text-xs font-medium text-slate-400">
+                      <span className="text-xs font-medium text-muted-foreground">
                         {item.category}
                       </span>
                     </div>
@@ -51,21 +51,21 @@ export default function ProgressTimeline() {
                     )}
                   </div>
 
-                  <h3 className="mt-4 font-display text-lg font-medium text-white sm:text-xl">
+                  <h3 className="mt-4 font-display text-lg font-medium text-foreground sm:text-xl">
                     {item.title}
                   </h3>
 
-                  <p className="mt-2.5 text-sm leading-relaxed text-slate-300">
+                  <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">
                     {item.description}
                   </p>
 
-                  <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-white/10 pt-3.5">
+                  <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-border pt-3.5">
                     {item.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="inline-flex items-center gap-1 rounded-md bg-white/[0.04] px-2.5 py-1 text-[11px] font-medium text-slate-400 border border-white/5"
+                        className="inline-flex items-center gap-1 rounded-md bg-muted/50 px-2.5 py-1 text-[11px] font-medium text-muted-foreground border border-border"
                       >
-                        <Tag size={10} className="text-slate-500" />
+                        <Tag size={10} className="text-muted-foreground" />
                         {tag}
                       </span>
                     ))}

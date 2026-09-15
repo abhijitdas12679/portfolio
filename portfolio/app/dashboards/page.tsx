@@ -20,7 +20,7 @@ export default function DashboardsPage() {
       <motion.h1 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-4xl font-display mb-12 text-center text-white"
+        className="text-4xl font-display mb-12 text-center text-foreground"
       >
         Power BI Dashboards
       </motion.h1>
@@ -32,12 +32,12 @@ export default function DashboardsPage() {
             transition={{ duration: 0.5, delay: idx * 0.1 }}
             key={idx}
           >
-            <Link href={dash.link} target="_blank" className="block p-8 rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-transparent shadow-xl transition-all hover:-translate-y-1 hover:border-white/20 group h-full">
+            <Link href={dash.link} target="_blank" className="block p-8 rounded-3xl border border-border bg-card shadow-xl transition-all hover:-translate-y-1 hover:border-teal/50 group h-full">
               <div className="flex justify-between items-start gap-4">
-                <h2 className="text-xl font-display text-white group-hover:text-teal transition-colors">{dash.title}</h2>
-                <ExternalLink size={20} className="text-slate-500 group-hover:text-teal transition-colors" />
+                <h2 className="text-xl font-display text-foreground group-hover:text-teal transition-colors">{dash.title}</h2>
+                <ExternalLink size={20} className="text-muted-foreground group-hover:text-teal transition-colors" />
               </div>
-              <p className="text-slate-400 text-sm mt-4">View interactive analytics dashboard →</p>
+              <p className="text-muted-foreground text-sm mt-4">View interactive analytics dashboard →</p>
             </Link>
           </motion.div>
         ))}
