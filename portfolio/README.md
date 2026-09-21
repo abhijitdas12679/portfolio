@@ -26,8 +26,3 @@ No environment variables are required — all content lives in `lib/data.ts`.
 - Profile photo: `public/images/profile.png` (swap the file, keep the name, or
   update the path in `components/Hero.tsx`)
 - Colors and fonts: `tailwind.config.ts` and `app/layout.tsx`
-
-## Notes
-
-- The footer's contact line is a placeholder — add a real email, LinkedIn, or
-  contact form when you have one you'd like to publish.
