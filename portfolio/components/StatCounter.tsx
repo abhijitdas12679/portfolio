@@ -38,9 +38,9 @@ export default function StatCounter({
       initial={{ opacity: 0, y: 12 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
-      className={`flex flex-col justify-start text-left ${className}`}
+      className={`flex flex-col items-center justify-center text-center ${className}`}
     >
-      <div className="flex items-baseline font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl min-h-[2.5rem]">
+      <div className="flex justify-center items-baseline font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl min-h-[2.5rem]">
         {prefix}
         {decimals > 0 ? display.toFixed(decimals) : Math.round(display).toLocaleString()}
         {suffix}

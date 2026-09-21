@@ -125,6 +125,12 @@ export const benchApps = [
 
 export const pocs = [
   {
+    title: "Sales Operations Data Migration, BI Reporting & ERP Automation Platform",
+    description:
+      "This POC was successfully converted to a client engagement, expanding a 2-month contract into a 1+ year long-term partnership.",
+    link: "https://vemp-my.sharepoint.com/:w:/g/personal/abhijitdas_virtualemployee_com/IQAgw8O8Wx2DR6GMSaOWOEtSAaxHQTxHh1036tSyx0y2D4k?e=1KqwvN",
+  },
+  {
     title: "Predictive healthcare intelligence system",
     description:
       "A clinical decision-support system that predicts surgical risks such as delirium and mortality, using historical patient records and real-time pre-operative data in line with Australian data privacy regulations.",
@@ -147,6 +153,12 @@ export const pocs = [
     description:
       "A React and FastAPI system on AWS S3 that uses regex, spaCy, and AI to parse uploaded DOCX and PDF files, extract text, and generate structured output through a docxtpl template engine.",
     link: "https://vemp-my.sharepoint.com/:w:/g/personal/abhijitdas_virtualemployee_com/IQA8mpGZkrFTTa6gSL9KxzdsAaTcS32UFzg4aKrA9KseM9U?e=AetrhI",
+  },
+  {
+    title: "JD Edwards Reporting Automation & Power BI Implementation",
+    description:
+      "Proof of concept for automating JD Edwards reporting workflows and implementing Power BI analytics.",
+    link: "https://vemp-my.sharepoint.com/:w:/g/personal/abhijitdas_virtualemployee_com/IQCSMs0S3Z6zT6g3StrNQy-cAaTTns7fiHrnFRYrkk3airg?e=NYIGJF",
   },
 ];
 
