@@ -178,39 +178,41 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap justify-center gap-6">
           {exploreGateways.map((item, index) => {
             const Icon = gatewayIcons[index % gatewayIcons.length];
             return (
-              <TiltCard key={item.title} glowColor="rgba(99,102,241,0.25)">
-                <Link
-                  href={item.href}
-                  className="glass-card glass-card-hover group flex h-full flex-col justify-between overflow-hidden rounded-3xl p-7 transition-all"
-                >
-                  <div>
-                    <div className="flex items-center justify-between">
-                      <span className={`flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br ${item.gradient} text-white shadow-lg`}>
-                        <Icon size={20} />
-                      </span>
-                      <span className="rounded-full border border-border bg-card px-3 py-1 text-[11px] font-semibold text-muted-foreground">
-                        {item.badge}
-                      </span>
+              <div key={item.title} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+                <TiltCard glowColor="rgba(99,102,241,0.25)">
+                  <Link
+                    href={item.href}
+                    className="glass-card glass-card-hover group flex h-full flex-col justify-between overflow-hidden rounded-3xl p-7 transition-all items-center text-center"
+                  >
+                    <div className="flex flex-col items-center">
+                      <div className="flex flex-col items-center gap-3">
+                        <span className={`flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br ${item.gradient} text-white shadow-lg`}>
+                          <Icon size={20} />
+                        </span>
+                        <span className="rounded-full border border-border bg-card px-3 py-1 text-[11px] font-semibold text-muted-foreground">
+                          {item.badge}
+                        </span>
+                      </div>
+
+                      <h3 className="mt-5 font-display text-xl font-medium text-foreground transition-colors group-hover:text-teal">
+                        {item.title}
+                      </h3>
+                      <p className="mt-2.5 text-xs leading-relaxed text-muted-foreground sm:text-sm">
+                        {item.description}
+                      </p>
                     </div>
 
-                    <h3 className="mt-5 font-display text-xl font-medium text-foreground transition-colors group-hover:text-teal">
-                      {item.title}
-                    </h3>
-                    <p className="mt-2.5 text-xs leading-relaxed text-muted-foreground sm:text-sm">
-                      {item.description}
-                    </p>
-                  </div>
-
-                  <div className="mt-6 flex items-center justify-between border-t border-border pt-4 text-xs font-semibold text-teal group-hover:underline">
-                    <span>{item.cta}</span>
-                    <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
-                  </div>
-                </Link>
-              </TiltCard>
+                    <div className="mt-6 flex w-full items-center justify-center gap-2 border-t border-border pt-4 text-xs font-semibold text-teal group-hover:underline">
+                      <span>{item.cta}</span>
+                      <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </Link>
+                </TiltCard>
+              </div>
             );
           })}
         </div>

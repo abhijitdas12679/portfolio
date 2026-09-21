@@ -24,7 +24,7 @@ export default function PocList() {
       />
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {pocs.map((poc, i) => {
-          const v = visuals[i];
+          const v = visuals[i % visuals.length];
           return (
             <TiltCard key={poc.title} glowColor={v.glow}>
               <motion.a
