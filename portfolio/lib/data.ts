@@ -102,7 +102,7 @@ export const benchApps = [
     title: "Operations & communication automation agent",
     description:
       "Generates emails, project reports, meeting minutes, and tasks from raw text. Includes custom templates, personalized bulk emailing, and real-time task tracking for admins.",
-    webLink: "https://operations-agent-jqge.vercel.app",
+    webLink: "https://operations-agent-two.vercel.app",
     docLink:
       "https://vemp-my.sharepoint.com/:w:/g/personal/abhijitdas_virtualemployee_com/IQC6ZNISPL__QK-6dmNT4l50AUKMrlKqUF3eaePYeUEFOAE?e=ACUROQ",
   },
