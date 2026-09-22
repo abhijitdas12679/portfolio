@@ -5,6 +5,7 @@ import { Calendar, Sparkles, Tag } from "lucide-react";
 import ChapterHeading from "./ChapterHeading";
 import TiltCard from "./TiltCard";
 import { monthlyProgress } from "@/lib/data";
+import { EASE_SMOOTH, DURATION_NORMAL, STAGGER_NORMAL } from "@/lib/motion";
 
 export default function ProgressTimeline() {
   return (
@@ -16,19 +17,19 @@ export default function ProgressTimeline() {
         color="teal"
       />
 
-      <div className="relative border-l-2 border-border pl-6 sm:pl-8 md:ml-4 md:pl-10">
+      <div className="relative border-l-2 border-border pl-12">
         <div className="flex flex-col gap-8">
           {monthlyProgress.map((item, index) => (
             <motion.div
               key={item.month}
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: -18 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: DURATION_NORMAL, delay: index * STAGGER_NORMAL, ease: EASE_SMOOTH }}
               className="relative"
             >
-              {/* Timeline Indicator Dot */}
-              <div className="absolute -left-[31px] top-1.5 flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background sm:-left-[39px] md:-left-[47px]">
+              {/* Timeline Indicator Dot - centered in middle of line */}
+              <div className="absolute -left-12 top-6 flex h-6 w-6 items-center justify-center rounded-full border border-border bg-background shadow-md">
                 <div className={`h-2.5 w-2.5 rounded-full bg-gradient-to-r ${item.color}`} />
               </div>
 

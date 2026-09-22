@@ -5,6 +5,7 @@ import { ExternalLink, FileText, Mail, ClipboardList, Plane } from "lucide-react
 import ChapterHeading from "./ChapterHeading";
 import TiltCard from "./TiltCard";
 import { benchApps } from "@/lib/data";
+import { EASE_SMOOTH, DURATION_NORMAL, STAGGER_NORMAL } from "@/lib/motion";
 
 const visuals = [
   { Icon: Mail, gradient: "from-teal to-indigo", glow: "rgba(13,148,136,0.28)" },
@@ -25,13 +26,14 @@ export default function BenchApps() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {benchApps.map((app, i) => {
             const v = visuals[i];
+            const isLastOdd = benchApps.length % 3 !== 0 && i === benchApps.length - 1;
             return (
-              <TiltCard key={app.title} glowColor={v.glow}>
+              <TiltCard key={app.title} glowColor={v.glow} className={isLastOdd ? "sm:max-lg:col-span-2 sm:max-lg:max-w-xl sm:max-lg:mx-auto w-full" : "w-full"}>
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
+                  transition={{ duration: DURATION_NORMAL, ease: EASE_SMOOTH, delay: i * STAGGER_NORMAL }}
                   className="glass-card glass-card-hover relative z-10 flex h-full flex-col overflow-hidden rounded-3xl p-6 sm:p-7"
                 >
                   <div className={`absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r ${v.gradient}`} />

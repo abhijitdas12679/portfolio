@@ -165,10 +165,12 @@ export const pocs = [
 export const dashboards = [
   {
     title: "Sales performance dashboard",
+    image: "/images/sales_dashboard.jpg",
     link: "https://vemp-my.sharepoint.com/:u:/g/personal/abhijitdas_virtualemployee_com/IQDQ2cwe2xuXTqcHk21wTyCVAUFNLUOoUufvjCZpC98iu3s?e=r3fUS6",
   },
   {
     title: "Operations metrics dashboard",
+    image: "/images/operations_dashboard.jpg",
     link: "https://vemp-my.sharepoint.com/:u:/g/personal/abhijitdas_virtualemployee_com/IQCV4Lpe0VKMQrjzwNFiPdNHAYeh37g2wZf7WU7HZIMARG8?e=IT4ARn",
   },
 ];
