@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
+import { Fraunces, IBM_Plex_Sans } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -26,13 +26,6 @@ const plex = IBM_Plex_Sans({
   display: "swap",
 });
 
-const mono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  weight: ["400", "500"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
   title: "Executive Portfolio | Abhijit Das",
   description:
@@ -47,24 +40,31 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${plex.variable} ${mono.variable} scroll-smooth`}
+      className={`${fraunces.variable} ${plex.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <body className="bg-background text-foreground font-body antialiased min-h-screen selection:bg-indigo/25 selection:text-white flex flex-col transition-colors duration-300 relative">
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
+
         <PageIntro />
         <ScrollProgress />
         <CustomCursor />
         <AnimatedBackground />
 
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
           <SmoothScrollProvider>
             <Nav />
+
             <div id="main-content" className="relative z-10 flex-1">
               <PageTransition>{children}</PageTransition>
             </div>
+
             <Footer />
           </SmoothScrollProvider>
         </ThemeProvider>
