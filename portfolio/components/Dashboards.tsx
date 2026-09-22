@@ -6,6 +6,7 @@ import ChapterHeading from "./ChapterHeading";
 import GradientOrbs from "./GradientOrbs";
 import MiniBarChart from "./MiniBarChart";
 import { dashboards } from "@/lib/data";
+import { EASE_SMOOTH, DURATION_NORMAL, STAGGER_NORMAL } from "@/lib/motion";
 
 const visuals = [
   { from: "#FBBF24", to: "#D97706" },
@@ -19,7 +20,7 @@ export default function Dashboards() {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-6 md:px-10">
         <ChapterHeading
           number="05"
-          title="Power BI dashboards"
+          title="PowerBI Dashboards"
           note="Interactive business intelligence reports and analytics models"
           color="indigo"
         />
@@ -36,7 +37,7 @@ export default function Dashboards() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
+                transition={{ duration: DURATION_NORMAL, ease: EASE_SMOOTH, delay: i * STAGGER_NORMAL }}
                 className="glass-card glass-card-hover group flex flex-row items-center justify-between gap-4 rounded-3xl p-6 sm:p-7"
               >
                 <div className="flex-1">
